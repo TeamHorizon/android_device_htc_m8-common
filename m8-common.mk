@@ -60,3 +60,6 @@ PRODUCT_PACKAGES += \
 # Variant linking script
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/releasetools/variant_script.sh:install/bin/variant_script.sh
+
+# Root
+WITH_SUPERSU := true
