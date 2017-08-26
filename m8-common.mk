@@ -1,5 +1,6 @@
 #
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2015-2016 The CyanogenMod Project
+#               2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,6 +34,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    camera.device@3.2-impl \
     camera.msm8974 \
     Snap \
     Camera2
@@ -46,6 +49,9 @@ PRODUCT_PACKAGES += \
     init.target.rc
 
 # IRDA
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl
+
 PRODUCT_BOOT_JARS += \
     htcirlibs
 
