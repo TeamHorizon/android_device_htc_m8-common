@@ -1,5 +1,6 @@
 # Copyright (C) 2012 The Android Open Source Project
 # Copyright (C) 2013-2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +23,7 @@ import os
 
 def FullOTA_InstallEnd(info):
   info.script.Mount("/system")
-  info.script.AppendExtra('run_program("/tmp/install/bin/variant_script.sh");')
+  info.script.AppendExtra('assert(run_program("/tmp/install/bin/variant_script.sh") == 0);')
   info.script.Unmount("/system")
 
 def FullOTA_PostValidate(info):
