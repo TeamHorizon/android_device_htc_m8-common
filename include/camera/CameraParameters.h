@@ -696,6 +696,7 @@ public:
     static const char KEY_GPU_EFFECT_PARAM_3[];
     static const char KEY_FORCE_USE_AUDIO_ENABLED[];
     static const char KEY_SMILEINFO_BYFACE_SUPPORTED[];
+    static const char ZSL_OFF[];
 
     void getRawSize(int *magic, int *sauce) const;
     void getBrightnessLumaTargetSet(int *magic, int *sauce) const;

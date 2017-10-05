@@ -43,6 +43,7 @@ const char CameraParameters_EXT::VIDEO_HFR_3X[] = "90";
 const char CameraParameters_EXT::VIDEO_HFR_4X[] = "120";
 const char CameraParameters_EXT::VIDEO_HFR_5X[] = "150";
 const char CameraParameters_EXT::KEY_FORCE_USE_AUDIO_ENABLED[] = "force-use-audio-enabled";
+const char CameraParameters_EXT::KEY_SLOW_MOTION_VERSION[] = "slow-motion-version";
 const char CameraParameters_EXT::DENOISE_ON[] = "denoise-on";
 const char CameraParameters_EXT::DENOISE_OFF[] = "denoise-off";
 
